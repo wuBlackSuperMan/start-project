@@ -1,0 +1,98 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: $font-body;
+  background-color: $white;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%;
+}
+
+.for-mobile {
+  display: none;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.error {
+  border: 2px #ff4019 solid;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: transparent;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.error {
+  border: 2px #ff4019 solid !important; // stylelint-disable-line declaration-no-important
+}
+
+.main {
+  flex-grow: 1;
+  margin-top: 136px;
+
+  @include desktop {
+    margin-top: 160px;
+  }
+
+  @include tablet {
+    margin-top: 150px;
+  }
+
+  @include mobile-m {
+    margin-top: 140px;
+  }
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+
+.logo {
+  max-width: 163px;
+  z-index: 5;
+
+  @include desktop {
+    margin-right: 70px;
+  }
+
+  @include mobile {
+    margin-right: auto;
+  }
+
+  @include mobile-m {
+    max-width: 144px;
+  }
+
+  &__img {
+    @include mobile-s {
+      height: 18px;
+
+    }
+  }
+}
+
+.overflow {
+  overflow: hidden;
+}
