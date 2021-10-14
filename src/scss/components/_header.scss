@@ -1,0 +1,116 @@
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  font: $font-medium;
+  font-size: 16px;
+  line-height: 1.2;
+
+  &__top {
+    padding: 24px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 30px;
+  }
+
+  &__logo {
+    grid-column: 2 span;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 278px;
+    width: 100%;
+    grid-column: 4 span;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $blue;
+  }
+
+  &__title::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 60px;
+    left: -15px;
+    background-color: #a4a4a4;
+  }
+
+  &__list {
+    grid-column: 2 span;
+  }
+
+  &__list-title {
+    font-weight: 500;
+    color: $golden;
+  }
+
+  &__inner {
+    padding: 25px 0 25px 40px;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+  }
+
+  &__link {
+    color: $blue;
+  }
+}
+
+.link__social {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 13px;
+    height: 13px;
+    left: -15px;
+    bottom: 0;
+    background-image: url("../img/instagram.svg");
+  }
+
+  &--facebook::before {
+    width: 7px;
+    height: 15px;
+    background-image: url("../img/facebook.svg");
+  }
+
+  &--instagram::before {
+    background-image: url("../img/instagram.svg");
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 36px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 1.2;
+    text-transform: capitalize;
+    color: #a4a4a4;
+  }
+
+  &__link span {
+    text-transform: lowercase;
+  }
+
+  &__link--call {
+    padding: 26px 22px;
+    border-radius: 0 20px 20px 0;
+    font-size: 16px;
+    background-color: $blue;
+    color: white;
+  }
+}
