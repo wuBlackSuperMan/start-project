@@ -11,7 +11,25 @@ body {
   flex-direction: column;
   position: relative;
   height: 100%;
+  overflow: hidden;
 }
+
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title{
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: $title-color;
+  text-align: center;
+}
+
+
 
 .for-mobile {
   display: none;
