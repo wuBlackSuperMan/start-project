@@ -13,6 +13,13 @@ body {
   height: 100%;
 }
 
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
 .for-mobile {
   display: none;
 
@@ -40,6 +47,14 @@ body {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  appearance: none;
+  border: 0;
+  background-color: inherit;
+  color: inherit;
 }
 
 .error {
@@ -70,8 +85,7 @@ button {
 
 
 .logo {
-  max-width: 163px;
-  z-index: 5;
+
 
   @include desktop {
     margin-right: 70px;
