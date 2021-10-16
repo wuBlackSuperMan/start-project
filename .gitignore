@@ -4,7 +4,7 @@
 .vscode
 *.sublime*
 dist/
-node_modules/
+node_modules/*
 npm_debug.*
 package-lock.json
 app/css/*
