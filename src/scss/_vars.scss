@@ -1,22 +1,16 @@
+$white: #ffffff;
+$black: #000000;
 
-  $white: #ffffff;
-  $golden: #bf9366;
-  $black: #000000;
-  $hover: #c09d79;
-  $disabled: #e2e2e2;
-  $silver: #9d9d9d;
-  $red: #bb0d0d;
-  $form: #fdfbfa;
-  $filter: #dadada;
-  $border-form: #9d9d9d;
+$blue-900: #0F2E74;
+$blue-200: #EFF6FF;
 
 // FONTS
 
-$font-body: normal 300 14px/1.7 'Adieu',
+$font-body: normal 400 24px/1.2 'MontserratReg',
 sans-serif;
-$font-bold: normal 700 24px/1.2 'Adieu',
+
+$font-medium: normal 500 20px/1.2 'MontserratMed',
 sans-serif;
-$font-medium: normal 400 14px/1.1 'CervoNeue',
-sans-serif;
-$font-btn: normal 400 20px/1.2 'CervoNeue',
+
+$font-title: normal 600 36px/1.2 'MontserratSem',
 sans-serif;

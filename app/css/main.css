@@ -1,0 +1,115 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+.stock {
+  color: #0F2E74; }
+  .stock__title {
+    margin-bottom: 35px; }
+  .stock__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 80px; }
+
+.stock-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 25px;
+  text-align: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: #EFF6FF;
+  border-radius: 10px;
+  height: 650px; }
+  .stock-card__title {
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 285px; }
+  .stock-card__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: #0F2E74;
+    border-radius: 50%; }
+    .stock-card__img::after {
+      content: '';
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+    .stock-card__img--star::after {
+      width: 65px;
+      height: 65px;
+      background-image: url(../img/Star.png); }
+    .stock-card__img--user::after {
+      background-image: url(../img/user.png);
+      width: 40px;
+      height: 46px; }
+  .stock-card__btn {
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px 80px;
+    max-width: 255px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 0.8;
+    border: 1px solid #0F2E74;
+    border-radius: 5px; }
+  .stock-card__text {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .stock-card .quote {
+    font-weight: 600; }
+  .stock-card__information {
+    font: normal 500 20px/1.2 "MontserratMed", sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px; }
+    .stock-card__information--req {
+      margin-bottom: 10px; }
+  .stock-card__list {
+    font-size: 18px;
+    text-align: left;
+    padding: 0 24px;
+    margin-bottom: 15px; }
+  .stock-card__item {
+    position: relative;
+    padding-left: 10px; }
+    .stock-card__item:not(:last-child) {
+      margin-bottom: 5px; }
+    .stock-card__item::before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-color: #0F2E74; }
+  .stock-card__benefit {
+    font-size: 20px;
+    padding: 0 30px;
+    text-align: left; }
+  .stock-card__advantages {
+    font-size: 20px;
+    font-weight: 500; }
+  .stock-card__connect {
+    margin-bottom: 20px; }
+  .stock-card__number {
+    display: block;
+    text-align: center;
+    font-weight: 600; }
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,127 @@
+.stock{
+  color: $blue-900;
+  &__title{
+    margin-bottom: 35px;
+  }
+  &__list{
+    @include flex-all-sb;
+    margin-bottom: 80px;
+  }
+}
+.stock-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 25px;
+  text-align: center;
+  max-width: 370px;
+  width: 100%;
+  background-color: $blue-200;
+  border-radius: 10px;
+  height: 650px;
+  &__title{
+    font-size: 24px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 285px;
+  }
+  &__img{
+    @include flex-all-center;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: $blue-900;
+    border-radius: 50%;
+    &::after{
+      content: '';
+      @include bg-cover;
+    }
+    &--star{
+      &::after{
+        width: 65px;
+        height: 65px;
+        background-image: url(../img/Star.png);
+      }
+    }
+    &--user{
+      &::after{
+        background-image: url(../img/user.png);
+        width: 40px;
+        height: 46px;
+      }
+    }
+  }
+  &__btn{
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 15px 80px;
+    max-width: 255px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 0.8;
+    border: 1px solid $blue-900;
+    border-radius: 5px;
+  }
+  &__text{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .quote{
+    font-weight: 600;
+  };
+  &__information{
+    font: $font-medium;
+    font-size: 24px;
+    margin-bottom: 20px;
+    &--req{
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list{
+    font-size: 18px;
+    text-align: left;
+    padding: 0 24px;
+    margin-bottom: 15px;
+  }
+  &__item{
+    position: relative;
+    padding-left: 10px;
+    &:not(:last-child){
+      margin-bottom: 5px;
+    }
+    &::before{
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      background-color: $blue-900;
+
+    }
+  }
+  
+  &__benefit{
+    font-size: 20px;
+    padding: 0 30px;
+    text-align: left;
+    
+  }
+  &__advantages{
+    font-size: 20px;
+    font-weight: 500;
+  }
+  &__connect{
+    margin-bottom: 20px;
+  }
+
+  &__number{
+    display: block;
+    text-align: center;
+    font-weight: 600;
+  }
+
+}

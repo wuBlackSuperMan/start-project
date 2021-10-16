@@ -48,19 +48,11 @@ body {
 
 .main {
   flex-grow: 1;
-  margin-top: 136px;
 
-  @include desktop {
-    margin-top: 160px;
-  }
+  // @include desktop {
+  //   margin-top: 160px;
+  // }
 
-  @include tablet {
-    margin-top: 150px;
-  }
-
-  @include mobile-m {
-    margin-top: 140px;
-  }
 }
 
 button {
@@ -68,31 +60,18 @@ button {
   background-color: transparent;
 }
 
-
-.logo {
-  max-width: 163px;
-  z-index: 5;
-
-  @include desktop {
-    margin-right: 70px;
-  }
-
-  @include mobile {
-    margin-right: auto;
-  }
-
-  @include mobile-m {
-    max-width: 144px;
-  }
-
-  &__img {
-    @include mobile-s {
-      height: 18px;
-
-    }
-  }
-}
-
 .overflow {
   overflow: hidden;
+}
+
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font: $font-title;
+  color: $blue-900;
+  text-align: center;
 }
