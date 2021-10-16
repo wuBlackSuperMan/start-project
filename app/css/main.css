@@ -1,0 +1,70 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+.services {
+  background-color: #0f2e74;
+  position: relative;
+  color: #fff;
+  padding: 145px 0 70px;
+  font-weight: 300; }
+  .services__img {
+    width: 170px;
+    height: 170px;
+    margin: 0 auto;
+    position: absolute;
+    top: -85px;
+    left: 50%;
+    transform: translate(-50%); }
+  .services__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .services__item {
+    max-width: 535px;
+    width: 100%;
+    padding-left: 120px;
+    margin-bottom: 30px;
+    position: relative; }
+    .services__item:last-child {
+      margin: 0 auto 30px; }
+    .services__item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50px;
+      transform: translate(-50%);
+      width: 100px;
+      height: 100px;
+      background-image: url("../../img/services-1.svg"); }
+  .services__item--secure::before {
+    background-image: url("../../img/services-1.svg"); }
+  .services__item--consultation::before {
+    background-image: url("../../img/services-2.svg"); }
+  .services__item--bodyguard::before {
+    background-image: url("../../img/services-3.svg"); }
+  .services__item--equipment::before {
+    background-image: url("../../img/services-4.svg"); }
+  .services__item--call::before {
+    background-image: url("../../img/services-5.svg"); }
+  .services__item--safe::before {
+    background-image: url("../../img/services-6.svg"); }
+  .services__item--cargo::before {
+    background-image: url("../../img/services-7.svg"); }
+  .services__title {
+    color: #bf8700;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 6px; }
+  .services__text {
+    font-size: 18px;
+    line-height: 22px; }
+
+/*# sourceMappingURL=main.css.map */
