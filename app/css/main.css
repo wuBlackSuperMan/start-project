@@ -1,0 +1,47 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+.title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.2;
+  color: #0F2E74;
+  margin-bottom: 50px; }
+
+.promo__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.promo__video-link {
+  background-image: url("../../img/promo-poster.jpg");
+  width: 995px;
+  height: 496px;
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.promo__link-more {
+  border: 1px solid #0F2E74;
+  border-radius: 15px;
+  padding: 15px 72px;
+  align-items: flex-start;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #0F2E74; }
+
+/*# sourceMappingURL=main.css.map */

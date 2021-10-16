@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "Adieu";
+  src: url("../fonts/Adieu-Light.woff2") format("woff2"), url("../fonts/Adieu-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Adieu";
+  src: url("../fonts/Adieu-Bold.woff2") format("woff2"), url("../fonts/Adieu-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "CervoNeue";
+  src: url("../fonts/CervoNeue-Regular.woff2") format("woff2"), url("../fonts/CervoNeue-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "CervoNeue";
+  src: url("../fonts/CervoNeue-Medium.woff2") format("woff2"), url("../fonts/CervoNeue-Medium.woff") format("woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal; }
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+html {
+  height: 100%;
+  scroll-behavior: smooth; }
+
+body {
+  font: normal 300 14px/1.7 "Adieu", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 100%; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 768px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: transparent; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.main {
+  flex-grow: 1;
+  margin-top: 136px; }
+  @media (max-width: 1120px) {
+    .main {
+      margin-top: 160px; } }
+  @media (max-width: 1024px) {
+    .main {
+      margin-top: 150px; } }
+  @media (max-width: 576px) {
+    .main {
+      margin-top: 140px; } }
+
+button {
+  border: none;
+  background-color: transparent; }
+
+.logo {
+  max-width: 163px;
+  z-index: 5; }
+  @media (max-width: 1120px) {
+    .logo {
+      margin-right: 70px; } }
+  @media (max-width: 768px) {
+    .logo {
+      margin-right: auto; } }
+  @media (max-width: 576px) {
+    .logo {
+      max-width: 144px; } }
+  @media (max-width: 475px) {
+    .logo__img {
+      height: 18px; } }
+
+.overflow {
+  overflow: hidden; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+/*# sourceMappingURL=global.css.map */
