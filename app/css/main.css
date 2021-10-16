@@ -1,0 +1,73 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+.stock {
+  margin-bottom: 35px; }
+  .stock__inner {
+    display: flex;
+    justify-content: space-between; }
+  .stock__title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 1.5;
+    color: #0F2E74;
+    margin-bottom: 28px; }
+    .stock__title span {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 600; }
+  .stock__block {
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    max-width: 570px;
+    width: 100%;
+    padding: 150px 15px 54px 15px;
+    position: relative; }
+    .stock__block::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/stock-bad.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100px;
+      height: 100px;
+      top: 30px;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    .stock__block:not(:first-child) {
+      margin-left: 30px; }
+      .stock__block:not(:first-child)::after {
+        background-image: url("../../img/stock-good.png"); }
+      .stock__block:not(:first-child) .stock__item::after {
+        background-image: url("../../img/like.svg"); }
+  .stock__item {
+    padding-left: 42px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #071433;
+    margin-bottom: 15px;
+    position: relative; }
+    .stock__item::after {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/dislike.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 22px;
+      height: 22px;
+      left: 0;
+      top: 10px; }
+
+/*# sourceMappingURL=main.css.map */
