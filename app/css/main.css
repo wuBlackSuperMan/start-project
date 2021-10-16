@@ -1,0 +1,96 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+section {
+  text-align: center;
+  padding: 43px 0 40px 0;
+  color: #0F2E74; }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.order__title {
+  margin-bottom: 80px;
+  font: normal 300 14px/1.7 "Adieu", sans-serif;
+  font-size: 36px;
+  line-height: 1.22; }
+
+.order__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+  font-size: 14px; }
+
+.order__item {
+  max-width: 163px;
+  width: 100%;
+  padding-top: 105px;
+  padding-right: 27px;
+  position: relative; }
+  .order__item:not(:last-child) {
+    margin-right: 43px; }
+  .order__item::before {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    top: 0;
+    left: 20px; }
+  .order__item::after {
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 35px;
+    top: 26px;
+    right: -18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("../../../img/icons/arrow-right.png"); }
+  .order__item--phone::before {
+    background-image: url("./../../img/icons/phone.png"); }
+  .order__item--specialist::before {
+    background-image: url("../../../img/icons/specialist.png"); }
+  .order__item--contract::before {
+    background-image: url("../../../img/icons/contract.png"); }
+  .order__item--montage::before {
+    background-image: url("../../../img/icons/montage.png"); }
+  .order__item--security::before {
+    background-image: url("../../../img/icons/security.png"); }
+  .order__item--peace::before {
+    background-image: url("../../../img/icons/peace.png"); }
+  .order__item--peace::after {
+    background-image: none; }
+
+.about__title {
+  margin-bottom: 30px;
+  font: normal 300 14px/1.7 "Adieu", sans-serif;
+  font-size: 36px;
+  line-height: 1.22; }
+
+.about__text {
+  text-align: left;
+  text-indent: 64px;
+  margin-bottom: 30px;
+  font-size: 22px;
+  letter-spacing: 0.04em; }
+  .about__text span {
+    font-weight: 600; }
+
+.about__award {
+  align-items: center; }
+
+/*# sourceMappingURL=main.css.map */
